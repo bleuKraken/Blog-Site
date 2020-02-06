@@ -1,0 +1,203 @@
+@import 'top.css';
+@import 'main-card.css';
+@import 'colors.css';
+
+/**  Main CSS file. Used homepage and blog page.  **/
+.page {
+  margin: 0;
+  font-size: 1.1em;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.link {
+  text-decoration: none;
+  outline: none;
+}
+
+.button-row {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.newsletter-form {
+  text-align: center;
+  margin: 10px 0 50px;
+}
+
+.email-input {
+  display: inline-block;
+  width: 180px;
+  padding: 5px 0;
+}
+
+.subscribe-button {
+  padding: 5px 5px 7px;
+  font-size: 1rem;
+}
+
+.subscribe-button:hover {
+  background-color: rgb(32, 31, 32);
+  color: #ffffff;
+  border: 1px solid #f1f1f1;
+}
+
+/**  Quote  **/
+.quote-container {
+  padding: 3% 15%;
+  text-align: center;
+}
+
+.quote-title {
+  text-decoration: underline;
+}
+
+.quote-literal {
+  font-style: italic;
+}
+
+/**  Grid  **/
+.grid-container {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: auto auto auto;
+  max-width: 1500px;
+  margin: 25px auto;
+  padding: 0 20px;
+}
+
+.blog-column {
+  max-width: 450px;
+  min-width: 200px;
+}
+
+.grid-item {
+  border: 1px solid rgb(33, 33, 33);
+  margin-bottom: 10px;
+  min-height: 400px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+}
+
+.grid-item:hover {
+  box-shadow: 0 0 27px 1px #000;
+}
+
+.card-text {
+  width: 100%;
+  padding: 0 5%;
+}
+
+.card-text p {
+  min-width: 180px;
+}
+
+.page-bottom {
+  text-align: center;
+  padding: 100px 0 5px;
+}
+
+.dev-name {
+  display: block;
+  font-size: 0.8rem;
+}
+
+.dev-name .link:visited {
+  color: #0065fc;
+}
+
+/**  Images for fake posts on homepage and blog page  **/
+.card-1 {
+  background-image: url('../img/vr-in-museums.jpeg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.card-2 {
+  background-image: url('../img/hand-reaching.jpeg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.card-3 {
+  background-image: url('../img/controllers.jpeg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.card-4 {
+  background-image: url('../img/couch-vr.jpeg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.card-5 {
+  background-image: url('../img/facing-friend.jpeg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.card-6 {
+  background-image: url('../img/girl-smiling.jpeg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.card-7 {
+  background-image: url('../img/painting.jpeg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.card-8 {
+  background-image: url('../img/play-public.jpeg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.card-9 {
+  background-image: url('../img/psvr-play.jpeg');
+  background-position: center center;
+  background-size: cover;
+}
+
+/**  Mobile View  **/
+@media only screen and (max-width: 700px) {
+  .page {
+    font-size: 1rem;
+  }
+
+  .grid-container {
+    grid-template-columns: auto auto;
+  }
+
+  .blog-column:nth-child(3) {
+    display: none;
+  }
+
+  .sticky-nav .link {
+    display: none;
+  }
+
+  .mobile-nav {
+    visibility: visible;
+    display: block;
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  .mobile-nav .link {
+    margin: 0 15px;
+  }
+
+  .mobile-nav .link:visited {
+    color: #0065fc;
+  }
+}
+
+/**  Mobile View with 2 Columns Removed **/
+@media only screen and (max-width: 500px) {
+  .blog-column:nth-child(3), .blog-column:nth-child(2) {
+    display: none;
+  }
+}

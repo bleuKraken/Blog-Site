@@ -1,0 +1,41 @@
+/*
+*  Styling used for main card that links homepage to blog page.
+*/
+.main-card-image {
+  padding-top: 60px;
+  min-height: 440px;
+  height: 100%;
+  background-image: url('../img/ChrisMilk.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+}
+
+.transparent-layer {
+  height: auto;
+  align-self: flex-end;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 10%;
+}
+
+.main-card-body {
+  border: 1px solid #3c1eb4;
+  color: #fff;
+  height: 300px;
+  min-width: 200px;
+  max-width: 380px;
+  padding: 10px;
+  margin: 8px;
+}
+
+.main-card-title {
+  margin-top: 8%;
+}
+
+.main-card-text {
+  padding: 0 10px;
+  margin: 0 auto 25px;
+}
